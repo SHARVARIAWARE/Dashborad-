@@ -7,7 +7,7 @@ warnings.filterwarnings('ignore')
 import numpy as np
 
 st.set_page_config(page_title="PMBFY Claim Analysis",layout="wide")
-df=pd.read_excel("C:\\Users\\admin\\Downloads\\Notebook\\merged_data.xlsx")
+df=pd.read_excel("merged_data.xlsx")
 st.title("📊 PMFBY Claim Analysis 2018 - 2023")
 st.sidebar.header("Select the District:")
 district=st.sidebar.multiselect("Select the District:",options=df['District Name'].unique(),default=df['District Name'].unique())
